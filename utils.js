@@ -16,6 +16,7 @@ const authenticator = async () => {
 const createAlbum = async albumName => {
     if (fs.existsSync(path.join(__dirname, 'albums', `${albumName}.json`))) return;
     if (!fs.existsSync(path.join(__dirname, 'albums'))) fs.mkdirSync(path.join(__dirname, 'albums'));
+
     const { data: albumData } = await axios({
         method: 'post',
         headers: {
