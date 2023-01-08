@@ -1,4 +1,4 @@
 node_modules
-credentials.json
-tokens.json
-albums/**
+server/credentials.json
+server/tokens.json
+albums.json
